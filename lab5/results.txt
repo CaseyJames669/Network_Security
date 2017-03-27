@@ -1,0 +1,7 @@
+Comparing files expdf-md5.txt and MD5HASHES.TXT
+***** expdf-md5.txt
+
+***** MD5HASHES.TXT
+*****
+
+Tue 04/07/2015 

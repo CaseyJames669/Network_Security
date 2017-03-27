@@ -1,0 +1,1905 @@
+Dsadd user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraserFr"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraserFr@dc=example.example.org"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Francis"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -mi "J"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -display "Francis J Fraser"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1001"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraserFr\
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraserFr
+icacls e:\DMA\home\FraserFr /grant:r FraserFr:F /T /C
+
+dsadd group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA 
+dsmod group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA -addmbr "cn=FraserFr,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraserFr,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraserGe"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraserGe@dc=example.example.org"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Gerald"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -mi "E"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -display "Gerald E Fraser"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1002"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraserGe\
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraserGe
+icacls e:\DMA\home\FraserGe /grant:r FraserGe:F /T /C
+
+dsadd group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA 
+dsmod group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA -addmbr "cn=FraserGe,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraserGe,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraserJo"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraserJo@dc=example.example.org"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -fn "John"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -display "John Fraser"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1003"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraserJo\
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraserJo
+icacls e:\DMA\home\FraserJo /grant:r FraserJo:F /T /C
+
+dsadd group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA 
+dsmod group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA -addmbr "cn=FraserJo,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraserJo,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrasheskiSy"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrasheskiSy@dc=example.example.org"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Sylvester"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -mi "M"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -display "Sylvester M Frasheski"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1004"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrasheskiSy\
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrasheskiSy
+icacls e:\DMA\home\FrasheskiSy /grant:r FrasheskiSy:F /T /C
+
+dsadd group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA 
+dsmod group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA -addmbr "cn=FrasheskiSy,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrasheskiSy,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraskaPa"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraskaPa@dc=example.example.org"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Paul"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -display "Paul Fraska"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1005"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraskaPa\
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraskaPa
+icacls e:\DMA\home\FraskaPa /grant:r FraskaPa:F /T /C
+
+dsadd group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA 
+dsmod group "cn=Alpha,ou=DMA,dc=dragon,dc=example,dc=org" -samid AlphaDMA -addmbr "cn=FraskaPa,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraskaPa,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraterFr"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraterFr@dc=example.example.org"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -fn "James"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -mi "S"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -display "James S Frater"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1006"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraterFr\
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraterFr
+icacls e:\DMA\home\FraterFr /grant:r FraterFr:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FraterFr,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraterFr,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FratzerSo"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FratzerSo@dc=example.example.org"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Solomon"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -display "Solomon Fratzer"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1007"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FratzerSo\
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FratzerSo
+icacls e:\DMA\home\FratzerSo /grant:r FratzerSo:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FratzerSo,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FratzerSo,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrauenfelderDa"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrauenfelderDa@dc=example.example.org"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Daniel"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -display "Daniel Frauenfelder"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1008"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrauenfelderDa\
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrauenfelderDa
+icacls e:\DMA\home\FrauenfelderDa /grant:r FrauenfelderDa:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FrauenfelderDa,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrauenfelderDa,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FraunhoferFr"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FraunhoferFr@dc=example.example.org"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Frederick"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -city "Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -state "Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -display "Frederick Fraunhofer"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1009"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FraunhoferFr\
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FraunhoferFr
+icacls e:\DMA\home\FraunhoferFr /grant:r FraunhoferFr:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FraunhoferFr,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FraunhoferFr,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrawleyDe"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrawleyDe@dc=example.example.org"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Dennis"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -mi "J"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -display "Dennis J Frawley"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1010"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrawleyDe\
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrawleyDe
+icacls e:\DMA\home\FrawleyDe /grant:r FrawleyDe:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FrawleyDe,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrawleyDe,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrawleyJa"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrawleyJa@dc=example.example.org"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Henry"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -mi "M"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -display "Henry M Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1011"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrawleyJa\
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrawleyJa
+icacls e:\DMA\home\FrawleyJa /grant:r FrawleyJa:F /T /C
+
+dsadd group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA 
+dsmod group "cn=Beta,ou=DMA,dc=dragon,dc=example,dc=org" -samid BetaDMA -addmbr "cn=FrawleyJa,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrawleyJa"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrawleyJa@dc=example.example.org"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -fn "James"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -mi "H"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -display "James H Frawley"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1012"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrawleyJa\
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrawleyJa
+icacls e:\DMA\home\FrawleyJa /grant:r FrawleyJa:F /T /C
+
+dsadd group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA 
+dsmod group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA -addmbr "cn=FrawleyJa,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrawleyJa,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrawleyJo"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrawleyJo@dc=example.example.org"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -fn "John"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -display "John Frawley"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1013"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrawleyJo\
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrawleyJo
+icacls e:\DMA\home\FrawleyJo /grant:r FrawleyJo:F /T /C
+
+dsadd group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA 
+dsmod group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA -addmbr "cn=FrawleyJo,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrawleyJo,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrazerSy"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrazerSy@dc=example.example.org"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Sydney"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -mi "A"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -display "Sydney A Frazer"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1014"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrazerSy\
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrazerSy
+icacls e:\DMA\home\FrazerSy /grant:r FrazerSy:F /T /C
+
+dsadd group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA 
+dsmod group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA -addmbr "cn=FrazerSy,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrazerSy,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrazierAr"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrazierAr@dc=example.example.org"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Arthur"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -mi "C"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -display "Arthur C Frazier"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1015"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrazierAr\
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrazierAr
+icacls e:\DMA\home\FrazierAr /grant:r FrazierAr:F /T /C
+
+dsadd group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA 
+dsmod group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA -addmbr "cn=FrazierAr,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrazierAr,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -samid "FrazierCl"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -upn "FrazierCl@dc=example.example.org"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -fn "Clarence"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -mi ""
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -ln "Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" –street_address "Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -city "Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -state "Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -zip "Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -display "Clarence Frazier"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -empid "1016"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -pwd "1234"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -desc "5000 West National Avenue"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -dept "Assistants"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -hmdir \\chile\DMAhome\FrazierCl\
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -hmdrv "h:"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -profile ""
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -loscr ""
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -mustchpwd "no"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -canchpwd "yes"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -reversiblepwd "no"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -pwdneverexpires "no"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -acctexpires "9"
+Dsmod user "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org" -disabled "no"
+
+md e:\DMA\home\FrazierCl
+icacls e:\DMA\home\FrazierCl /grant:r FrazierCl:F /T /C
+
+dsadd group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA 
+dsmod group "cn=Chi,ou=DMA,dc=dragon,dc=example,dc=org" -samid ChiDMA -addmbr "cn=FrazierCl,ou=DMA, dc=dragon,dc=example,dc=org"
+
+dsadd group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA 
+dsmod group "cn=people,ou=DMA,dc=dragon,dc=example,dc=org" –samid peopleDMA -addmbr "cn=FrazierCl,ou=DMA,dc=dragon,dc=example,dc=org"
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+Dsadd user "cn=,ou=,dc=,dc=,dc=" -samid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -upn "@dc=.."
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -fn ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mi ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -ln ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" –street_address ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -city ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -state ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -zip ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -display ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -empid ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -desc ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -dept ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdir \\chile\home\\
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -hmdrv ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -profile ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -loscr ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -mustchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -canchpwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -reversiblepwd ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -pwdneverexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -acctexpires ""
+Dsmod user "cn=,ou=,dc=,dc=,dc=" -disabled ""
+
+md e:\\home\
+icacls e:\\home\ /grant:r :F /T /C
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" -samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" -samid  -addmbr "cn=,ou=, dc=,dc=,dc="
+
+dsadd group "cn=,ou=,dc=,dc=,dc=" –samid  
+dsmod group "cn=,ou=,dc=,dc=,dc=" –samid  -addmbr "cn=,ou=,dc=,dc=,dc="
+ 
+

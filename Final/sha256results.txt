@@ -1,0 +1,7 @@
+Comparing files sha256sum.txt and windows_sha256sum.txt
+***** sha256sum.txt
+
+***** windows_sha256sum.txt
+*****
+
+Sun 05/10/2015 

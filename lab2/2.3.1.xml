@@ -1,0 +1,26 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Microsoft Antimalware" /> 
+  <EventID Qualifiers="0">1013</EventID> 
+  <Level>4</Level> 
+  <Task>0</Task> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2015-02-19T15:13:58.000000000Z" /> 
+  <EventRecordID>292145</EventRecordID> 
+  <Channel>System</Channel> 
+  <Computer>ASUS_U52F</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data>%%860</Data> 
+  <Data>4.7.0205.0</Data> 
+  <Data>‎2/‎4/‎2015 9:13:18 AM</Data> 
+  <Data /> 
+  <Data /> 
+  <Data /> 
+  <Data /> 
+  <Data>NT AUTHORITY</Data> 
+  <Data>SYSTEM</Data> 
+  <Data>S-1-5-18</Data> 
+  </EventData>
+  </Event>

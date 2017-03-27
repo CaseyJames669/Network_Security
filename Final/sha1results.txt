@@ -1,0 +1,7 @@
+Comparing files sha1sum.txt and windows_sha1sum.txt
+***** sha1sum.txt
+
+***** windows_sha1sum.txt
+*****
+
+Sun 05/10/2015 

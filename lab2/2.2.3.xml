@@ -1,0 +1,20 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="MSSQL$MYMOVIES" />
+<EventID Qualifiers="16384">5579</EventID>
+<Level>4</Level>
+<Task>2</Task>
+<Keywords>0x80000000000000</Keywords>
+<TimeCreated SystemTime="2014-12-26T03:10:49.000000000Z" />
+<EventRecordID>14151</EventRecordID>
+<Channel>Application</Channel>
+<Computer>ASUS_U52F</Computer>
+<Security />
+</System>
+<EventData>
+<Data>1</Data>
+<Data>1</Data>
+<Data>MYMOVIES</Data>
+<Binary>CB1500000A00000014000000430048004900450046005300480041004B0045005C004D0059004D004F0056004900450053000000070000006D00610073007400650072000000</Binary>
+</EventData>
+</Event>

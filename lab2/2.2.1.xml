@@ -1,0 +1,20 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Tcpip" /> 
+  <EventID Qualifiers="49152">4199</EventID> 
+  <Level>2</Level> 
+  <Task>0</Task> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2014-04-18T19:48:02.439396900Z" /> 
+  <EventRecordID>231174</EventRecordID> 
+  <Channel>System</Channel> 
+  <Computer>ASUS_U52F</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data /> 
+  <Data>192.168.0.10</Data> 
+  <Data>E0-CB-1D-1B-2E-A6</Data> 
+  <Binary>0000000003002C0000000000671000C0020000000000000000000000000000000000000000000000</Binary> 
+  </EventData>
+  </Event>

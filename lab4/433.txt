@@ -1,0 +1,9 @@
+E:\NetSec3\test_file1.txt  No permissions are set. All users have full control.
+E:\NetSec3\test_file2.txt  No permissions are set. All users have full control.
+E:\NetSec3\test_file3.txt  No permissions are set. All users have full control.
+E:\NetSec3\test_file4.txt  No permissions are set. All users have full control.
+E:\NetSec3\test_file5.txt  No permissions are set. All users have full control.
+E:\NetSec3\433.txt  No permissions are set. All users have full control.
+Successfully processed 6 files; Failed processing 0 files
+
+Microsoft Windows [Version 6.1.7601]

@@ -1,0 +1,2 @@
+Feb 19 09:44:13 ubuntu sudo: linux : TTY=pts/4 ; PWD=/var/log ; USER=root ;
+COMMAND=/usr/bin/apt-get install apache2 php5-cgi binfmt-support

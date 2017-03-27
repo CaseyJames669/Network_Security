@@ -1,0 +1,99 @@
+Name	Group	Profile	Enabled	Action	Override	Program	Local Address	Remote Address	Protocol	Local Port	Remote Port	Allowed Users	Allowed Computers	
+µTorrent (TCP-In)		All	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\uTorrent\uTorrent.exe	Any	Any	TCP	Any	Any	Any	Any	
+µTorrent (UDP-In)		All	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\uTorrent\uTorrent.exe	Any	Any	UDP	Any	Any	Any	Any	
+Akamai NetSession Interface		Private	Yes	Allow	No	Any	Any	Any	TCP	1059	Any	Any	Any	
+Akamai NetSession Interface		Private	Yes	Allow	No	Any	Any	Any	UDP	5000	Any	Any	Any	
+Akamai NetSession Interface		Public	Yes	Allow	No	Any	Any	Any	TCP	1037	Any	Any	Any	
+Akamai NetSession Interface		Public	Yes	Allow	No	Any	Any	Any	TCP	1041	Any	Any	Any	
+Akamai NetSession Interface		Public	Yes	Allow	No	Any	Any	Any	UDP	5000	Any	Any	Any	
+Dropbox		Private	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\Dropbox\bin\Dropbox.exe	Any	Any	TCP	Any	Any	Any	Any	
+Dropbox		Private	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\Dropbox\bin\Dropbox.exe	Any	Any	UDP	Any	Any	Any	Any	
+dropbox.exe		Public	Yes	Allow	No	C:\users\casey\appdata\roaming\dropbox\bin\dropbox.exe	Any	Any	TCP	Any	Any	Any	Any	
+dropbox.exe		Public	Yes	Allow	No	C:\users\casey\appdata\roaming\dropbox\bin\dropbox.exe	Any	Any	UDP	Any	Any	Any	Any	
+Java(TM) Platform SE binary		Public	Yes	Block	No	C:\windows\system32\javaw.exe	Any	Any	UDP	Any	Any	Any	Any	
+Java(TM) Platform SE binary		Public	Yes	Block	No	C:\windows\system32\javaw.exe	Any	Any	TCP	Any	Any	Any	Any	
+Java(TM) Platform SE binary		Private	Yes	Allow	No	C:\windows\system32\javaw.exe	Any	Any	UDP	Any	Any	Any	Any	
+Java(TM) Platform SE binary		Private	Yes	Allow	No	C:\windows\system32\javaw.exe	Any	Any	TCP	Any	Any	Any	Any	
+Local KMS Host		Public	Yes	Block	No	C:\windows\kmsemulator.exe	Any	Any	TCP	Any	Any	Any	Any	
+Local KMS Host		Private	Yes	Allow	No	C:\windows\kmsemulator.exe	Any	Any	TCP	Any	Any	Any	Any	
+Local KMS Host		Private	Yes	Allow	No	C:\windows\kmsemulator.exe	Any	Any	UDP	Any	Any	Any	Any	
+Local KMS Host		Public	Yes	Block	No	C:\windows\kmsemulator.exe	Any	Any	UDP	Any	Any	Any	Any	
+Microsoft Lync		Private	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\lync.exe	Any	Any	UDP	Any	Any	Any	Any	
+Microsoft Lync		Private	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\lync.exe	Any	Any	TCP	Any	Any	Any	Any	
+Microsoft Lync		Public	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\lync.exe	Any	Any	TCP	Any	Any	Any	Any	
+Microsoft Lync		Public	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\lync.exe	Any	Any	UDP	Any	Any	Any	Any	
+Microsoft Lync UcMapi		Public	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\UcMapi.exe	Any	Any	UDP	Any	Any	Any	Any	
+Microsoft Lync UcMapi		Private	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\UcMapi.exe	Any	Any	TCP	Any	Any	Any	Any	
+Microsoft Lync UcMapi		Private	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\UcMapi.exe	Any	Any	UDP	Any	Any	Any	Any	
+Microsoft Lync UcMapi		Public	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\UcMapi.exe	Any	Any	TCP	Any	Any	Any	Any	
+Microsoft Office Outlook		Private, Public	Yes	Allow	No	C:\Program Files (x86)\Microsoft Office\Office15\outlook.exe	Any	Any	UDP	6004	Any	Any	Any	
+netsession_win.exe		Private	Yes	Allow	No	C:\users\casey\appdata\local\akamai\netsession_win.exe	Any	Any	UDP	Any	Any	Any	Any	
+netsession_win.exe		Private	Yes	Allow	No	C:\users\casey\appdata\local\akamai\netsession_win.exe	Any	Any	TCP	Any	Any	Any	Any	
+netsession_win.exe		Public	Yes	Block	No	C:\users\casey\appdata\local\akamai\netsession_win.exe	Any	Any	TCP	Any	Any	Any	Any	
+netsession_win.exe		Public	Yes	Block	No	C:\users\casey\appdata\local\akamai\netsession_win.exe	Any	Any	UDP	Any	Any	Any	Any	
+python		Public	Yes	Block	No	C:\python34\python.exe	Any	Any	TCP	Any	Any	Any	Any	
+python		Public	Yes	Block	No	C:\python34\python.exe	Any	Any	UDP	Any	Any	Any	Any	
+python		Private	Yes	Allow	No	C:\python34\python.exe	Any	Any	UDP	Any	Any	Any	Any	
+python		Private	Yes	Allow	No	C:\python34\python.exe	Any	Any	TCP	Any	Any	Any	Any	
+pythonw		Public	Yes	Block	No	C:\python34\pythonw.exe	Any	Any	TCP	Any	Any	Any	Any	
+pythonw		Public	Yes	Block	No	C:\python34\pythonw.exe	Any	Any	UDP	Any	Any	Any	Any	
+pythonw		Private	Yes	Allow	No	C:\python34\pythonw.exe	Any	Any	TCP	Any	Any	Any	Any	
+pythonw		Private	Yes	Allow	No	C:\python34\pythonw.exe	Any	Any	UDP	Any	Any	Any	Any	
+spotify.exe		Private	Yes	Allow	No	C:\users\casey\appdata\roaming\spotify\spotify.exe	Any	Any	TCP	Any	Any	Any	Any	
+spotify.exe		Public	Yes	Allow	No	C:\users\casey\appdata\roaming\spotify\spotify.exe	Any	Any	TCP	Any	Any	Any	Any	
+spotify.exe		Private	Yes	Allow	No	C:\users\casey\appdata\roaming\spotify\spotify.exe	Any	Any	UDP	Any	Any	Any	Any	
+spotify.exe		Public	Yes	Allow	No	C:\users\casey\appdata\roaming\spotify\spotify.exe	Any	Any	UDP	Any	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6915)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6915	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6916)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6916	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6917)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6917	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6918)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6918	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6919)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6919	Any	Any	Any	
+Visual Studio 2013 Controller Listener Ports (devenv.exe)(6920)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Any	TCP	6920	Any	Any	Any	
+Visual Studio 2013 Remote Debugger Discovery (devenv.exe)		All	Yes	Allow	No	C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\devenv.exe	Any	Local subnet	UDP	3702	Any	Any	Any	
+VMware Authd Service		Domain	Yes	Allow	No	C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe	Any	Any	Any	Any	Any	Any	Any	
+VMware Authd Service (private)		Private	Yes	Allow	No	C:\Program Files (x86)\VMware\VMware Workstation\vmware-authd.exe	Any	Local subnet	Any	Any	Any	Any	Any	
+VMware Workstation Server		Domain	Yes	Allow	No	C:\Program Files (x86)\VMware\VMware Workstation\vmware-hostd.exe	Any	Any	Any	Any	Any	Any	Any	
+VMware Workstation Server (private)		Private	Yes	Allow	No	C:\Program Files (x86)\VMware\VMware Workstation\vmware-hostd.exe	Any	Local subnet	Any	Any	Any	Any	Any	
+Windows Live Communications Platform		All	Yes	Allow	No	C:\Program Files (x86)\Windows Live\Contacts\wlcomm.exe	Any	Any	Any	Any	Any	Any	Any	
+Windows Live Communications Platform (SSDP)		All	Yes	Allow	No	Any	Any	Local subnet	UDP	1900	Any	Any	Any	
+Windows Live Communications Platform (UPnP)		All	Yes	Allow	No	Any	Any	Local subnet	TCP	2869	Any	Any	Any	
+µTorrent (TCP-In)		All	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\uTorrent\uTorrent.exe	Any	Any	TCP	Any	Any	Any	Any	
+µTorrent (UDP-In)		All	Yes	Allow	No	C:\Users\Casey\AppData\Roaming\uTorrent\uTorrent.exe	Any	Any	UDP	Any	Any	Any	Any	
+Core Networking - Destination Unreachable (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Destination Unreachable Fragmentation Needed (ICMPv4-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv4	Any	Any	Any	Any	
+Core Networking - Dynamic Host Configuration Protocol (DHCP-In)	Core Networking	All	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Any	UDP	68	67	Any	Any	
+Core Networking - Dynamic Host Configuration Protocol for IPv6(DHCPV6-In)	Core Networking	All	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Any	UDP	546	547	Any	Any	
+Core Networking - Internet Group Management Protocol (IGMP-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	IGMP	Any	Any	Any	Any	
+Core Networking - IPHTTPS (TCP-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	TCP	IPHTTPS	Any	Any	Any	
+Core Networking - IPv6 (IPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	IPv6	Any	Any	Any	Any	
+Core Networking - Multicast Listener Done (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Local subnet	ICMPv6	Any	Any	Any	Any	
+Core Networking - Multicast Listener Query (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Local subnet	ICMPv6	Any	Any	Any	Any	
+Core Networking - Multicast Listener Report (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Local subnet	ICMPv6	Any	Any	Any	Any	
+Core Networking - Multicast Listener Report v2 (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Local subnet	ICMPv6	Any	Any	Any	Any	
+Core Networking - Neighbor Discovery Advertisement (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Neighbor Discovery Solicitation (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Packet Too Big (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Parameter Problem (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Router Advertisement (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	fe80::/64	ICMPv6	Any	Any	Any	Any	
+Core Networking - Router Solicitation (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Teredo (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Core Networking - Teredo (UDP-In)	Core Networking	All	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Any	UDP	Edge Traversal	Any	Any	Any	
+Core Networking - Time Exceeded (ICMPv6-In)	Core Networking	All	Yes	Allow	No	System	Any	Any	ICMPv6	Any	Any	Any	Any	
+Google Chrome (mDNS-In)	Google Chrome	All	Yes	Allow	No	C:\Users\Casey\AppData\Local\Google\Chrome\Application\chrome.exe	Any	Any	UDP	5353	Any	Any	Any	
+Wireless PAN DHCP Server	MyWiFiDHCPDNS	All	Yes	Allow	No	C:\Program Files\Intel\WiFi\bin\PanDhcpDns.exe	Any	Any	Any	Any	Any	Any	Any	
+Network Discovery (LLMNR-UDP-In)	Network Discovery	Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	UDP	5355	Any	Any	Any	
+Network Discovery (NB-Datagram-In)	Network Discovery	Private	Yes	Allow	No	System	Any	Local subnet	UDP	138	Any	Any	Any	
+Network Discovery (NB-Name-In)	Network Discovery	Private	Yes	Allow	No	System	Any	Local subnet	UDP	137	Any	Any	Any	
+Network Discovery (Pub-WSD-In)	Network Discovery	Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	UDP	3702	Any	Any	Any	
+Network Discovery (SSDP-In)	Network Discovery	Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	UDP	1900	Any	Any	Any	
+Network Discovery (UPnP-In)	Network Discovery	Private	Yes	Allow	No	System	Any	Local subnet	TCP	2869	Any	Any	Any	
+Network Discovery (WSD Events-In)	Network Discovery	Private	Yes	Allow	No	System	Any	Local subnet	TCP	5357	Any	Any	Any	
+Network Discovery (WSD EventsSecure-In)	Network Discovery	Private	Yes	Allow	No	System	Any	Local subnet	TCP	5358	Any	Any	Any	
+Network Discovery (WSD-In)	Network Discovery	Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	UDP	3702	Any	Any	Any	
+Remote Assistance (DCOM-In)	Remote Assistance	Domain	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Any	TCP	135	Any	Any	Any	
+Remote Assistance (PNRP-In)	Remote Assistance	Domain, Private	Yes	Allow	No	%systemroot%\system32\svchost.exe	Any	Any	UDP	3540	Any	Any	Any	
+Remote Assistance (RA Server TCP-In)	Remote Assistance	Domain	Yes	Allow	No	%SystemRoot%\system32\raserver.exe	Any	Any	TCP	Any	Any	Any	Any	
+Remote Assistance (SSDP TCP-In)	Remote Assistance	Domain, Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	TCP	2869	Any	Any	Any	
+Remote Assistance (SSDP UDP-In)	Remote Assistance	Domain, Private	Yes	Allow	No	%SystemRoot%\system32\svchost.exe	Any	Local subnet	UDP	1900	Any	Any	Any	
+Remote Assistance (TCP-In)	Remote Assistance	Domain, Private	Yes	Allow	No	%SystemRoot%\system32\msra.exe	Any	Any	TCP	Any	Any	Any	Any	
+Telnet Server	Telnet	All	Yes	Allow	No	%systemroot%\system32\tlntsvr.exe	Any	Any	TCP	23	Any	Any	Any	

@@ -1,0 +1,7 @@
+Comparing files md5sum.txt and windows_md5sum.txt
+***** md5sum.txt
+
+***** windows_md5sum.txt
+*****
+
+Sun 05/10/2015 
